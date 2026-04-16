@@ -9,7 +9,6 @@
 </div>
 
 ---
-
 <!-- 
 ## `$ whoami`
 
@@ -27,11 +26,8 @@ public class BittieByte
     public string Status => "Always building something.";
 }
 ```
-
 --- 
-
 -->
-
 ## `$ ls -la skills/`
 
 <div align="center">
