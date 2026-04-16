@@ -23,8 +23,18 @@
     <line x1="544" y1="0" x2="544" y2="220" style="fill:rgb(0, 0, 0);stroke:rgb(33, 38, 45);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
   </g>
 
-  <!-- Scanline sweep -->
-  <rect x="0" y="0" width="680" height="40" fill="white" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.04;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Scanline Sweep (FIXED) -->
+<rect x="0" y="-40" width="680" height="40"
+  fill="white"
+  opacity="0.04">
+  <animate
+    attributeName="y"
+    from="-40"
+    to="230"
+    dur="3.2s"
+    repeatCount="indefinite"
+  />
+</rect>
 
   <!-- Terminal window dots -->
   <circle cx="28" cy="22" r="5" fill="#ff5f57" style="fill:rgb(255, 95, 87);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
@@ -74,6 +84,16 @@
   <text x="50" y="198" fill="#3fb950" font-size="12" style="fill:rgb(63, 185, 80);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Courier New&quot;, monospace;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">$</text>
   <text x="64" y="198" fill="#e6edf3" font-size="12" style="fill:rgb(230, 237, 243);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Courier New&quot;, monospace;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">git push origin main</text>
   <rect x="230" y="187" width="8" height="13" fill="#e6edf3" rx="1" style="fill:rgb(230, 237, 243);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Cursor (FIXED blink animation) -->
+  <rect x="230" y="187" width="8" height="13" fill="#e6edf3" rx="1">
+  <animate
+  	attributeName="opacity"
+  	values="0;1;0"
+  	dur="1s"
+  	repeatCount="indefinite"
+  />
+  </rect>
 
   <!-- Corner hex decoration -->
   <text x="580" y="68" fill="#8b949e" font-size="10" style="fill:rgb(139, 148, 158);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.35;font-family:&quot;Courier New&quot;, monospace;font-size:10px;font-weight:400;text-anchor:start;dominant-baseline:auto">0xFF</text>
