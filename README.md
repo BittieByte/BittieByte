@@ -82,7 +82,7 @@ public class BittieByte
 
 <br/>
 
-<img src="https://nirzak-streak-stats.vercel.app/?user=BittieByte&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D" width="49%"/>
+<img src="https://streak-stats.demolab.com/?user=BittieByte&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D" width="49%"/>
 
 </div>
 
